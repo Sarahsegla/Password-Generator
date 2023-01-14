@@ -91,16 +91,19 @@ var specialCharacters = [
   // Function to prompt user for password options
 
   function getPasswordOptions() {
- prompt("Password generator will create a password that will be 10 - 64 characters lowercase uppercase numeric and include special characters");
-  };
+    alert("This is a password generator")
+ let passwordGen = prompt("Password generator will create a password that will be 10 - 64 characters lowercase uppercase numeric and include special characters");
+  alert(passwordGen);
+};
  
   
   // Function for getting a random element from an array
   function getRandom(arr) {
+    
 
-    const randomIndex = Math.floor(Math.random() * arr.length);
+    const ranIndex = Math.floor(Math.random() * arr.length);
 
-    const item = arr[randomIndex];
+    const item = arr[ranIndex];
 
     return item;
   
