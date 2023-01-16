@@ -107,7 +107,7 @@ var specialCharacters = [
     // const item = arr[ranIndex];
 
     // return item;
-var characters = specialCharacters, numericCharacters, lowerCasedCharacters, upperCasedCharacters
+var characters = [specialCharacters, numericCharacters, lowerCasedCharacters, upperCasedCharacters]
     var passwordlen = 10;
     var passW = "";
 
