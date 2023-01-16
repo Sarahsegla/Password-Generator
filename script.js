@@ -99,9 +99,8 @@ var specialCharacters = [
   
   // Function for getting a random element from an array
   function getRandom(arr) {
-    
 
-    const ranIndex = Math.floor(Math.random() * arr.length);
+    const ranIndex =  Math.floor(Math.random() * arr.length);
 
     const item = arr[ranIndex];
 
@@ -115,6 +114,9 @@ console.log(result);
 
   // Function to generate password with user input
   function generatePassword() {
+    console.log("test my button");
+
+    return "test generated password"
   
   }
   
