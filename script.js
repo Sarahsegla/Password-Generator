@@ -89,23 +89,33 @@ var specialCharacters = [
   ];
   
   // Function to prompt user for password options
-
+  //alert("This is a password generator")
   function getPasswordOptions() {
     alert("This is a password generator")
  let passwordGen = prompt("Password generator will create a password that will be 10 - 64 characters lowercase uppercase numeric and include special characters");
   alert(passwordGen);
+
+ return ;
 };
  
   
   // Function for getting a random element from an array
   function getRandom(arr) {
 
-    const ranIndex =  Math.floor(Math.random() * arr.length);
+    // const ranIndex =  Math.floor(Math.random() * arr.length);
 
-    const item = arr[ranIndex];
+    // const item = arr[ranIndex];
 
-    return item;
-  
+    // return item;
+var characters = specialCharacters, numericCharacters, lowerCasedCharacters, upperCasedCharacters
+    var passwordlen = 10;
+    var passW = "";
+
+    for ( var i = 0; i <= passwordlen; i++) {
+      var ranNum = Math.floor(Math.random() * characters.length);
+      passW += characters.slice (ranNum, ranNum +1);
+    }
+   return passW;
   }
 
   const result = getRandom(specialCharacters, numericCharacters, lowerCasedCharacters, upperCasedCharacters)
