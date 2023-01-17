@@ -2,11 +2,12 @@
 
 
 ## User Story
-- A password generator
+- A password generator using arrays, loops and functions. The code contains HTML, CSS and JaveScript.
 
 ## Acceptance Criteria
--
--
+- must have a prompt
+- must be between 10 and 64 characters long
+- characters are uppercase, lowercase, symbols and numbers.
 
 
 
