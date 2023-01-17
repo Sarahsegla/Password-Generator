@@ -100,27 +100,30 @@ var specialCharacters = [
  
   
   // Function for getting a random element from an array
-  function getRandom(arr) {
+  function getRandom(specialCharacters, numericCharacters, lowerCasedCharacters, upperCasedCharacters) {
 
-    // const ranIndex =  Math.floor(Math.random() * arr.length);
+    const ranIndex =  Math.floor(Math.random() * getRandom.length);
 
-    // const item = arr[ranIndex];
+    const item = getRandom[ranIndex];
 
-    // return item;
-var characters = [specialCharacters, numericCharacters, lowerCasedCharacters, upperCasedCharacters]
-    var passwordlen = 10;
-    var passW = "";
+    return item;
 
-    for ( var i = 0; i <= passwordlen; i++) {
-      var ranNum = Math.floor(Math.random() * characters.length);
-      passW += characters.slice (ranNum, ranNum +1);
-    }
-   return passW;
-  }
 
-  const result = getRandom(specialCharacters, numericCharacters, lowerCasedCharacters, upperCasedCharacters)
+// const characters = [specialCharacters, numericCharacters, lowerCasedCharacters, upperCasedCharacters]
+//     var passwordlen = 10;
+    
+
+//     for ( var i = 0; i <= passwordlen; i++) {
+//       var ranNum = Math.floor(Math.random() * getRandom.length);
+//       passW += getRandom (ranNum, ranNum +1);
+//     };
+//     var passW = "";
+//    return passW;
+ };
+
+  //const result = getRandom(specialCharacters, numericCharacters, lowerCasedCharacters, upperCasedCharacters)
   
-console.log(result);
+console.log();
 
   // Function to generate password with user input
   function generatePassword() {
