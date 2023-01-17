@@ -87,15 +87,32 @@ var specialCharacters = [
     'Y',
     'Z'
   ];
+
+  let charactersLen = []
+  let arrOption = []
+  
   
   // Function to prompt user for password options
   //alert("This is a password generator")
   function getPasswordOptions() {
-    alert("This is a password generator")
- let passwordGen = prompt("Password generator will create a password that will be 10 - 64 characters lowercase uppercase numeric and include special characters");
-  alert(passwordGen);
-
- return ;
+   charactersLen = parseInt (prompt("Password has a minimum of 10 characters and maximum of 64 characters"));
+   if (isNaN(charactersLen), charactersLen < 10, charactersLen > 64 ) {
+    alert ("Password must be minimum of (10) characters and maximum of (64) characters ");
+    return false;
+   }
+   if (prompt ("Must have special characters like symbols")) {
+    arrOption = arrOption.concat(specialCharacters);
+   }
+   if (prompt ("Must have upper case characters")) {
+    arrOption = arrOption.concat(upperCasedCharacters);
+   }
+   if (prompt ("Must have lower case characters")) {
+    arrOption = arrOption.concat(lowerCasedCharacters);
+   }
+   if (prompt ("Must have numbers")) {
+    arrOption = arrOption.concat(numericCharacters);
+   }
+   return true;
 };
  
   
