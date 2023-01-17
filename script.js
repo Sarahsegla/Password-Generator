@@ -127,9 +127,17 @@ return arr[ranIndex];
   
   // Function to generate password with user input
   function generatePassword() {
-    console.log("test my button");
+    // console.log("test my button");
 
-    return "test generated password"
+    // return "test generated password"
+
+    var passW = "";
+
+    for ( var i = 0; i <= charactersLen; i++) {
+      var ranIndex = Math.floor(Math.random() * arrOption.length);
+      passW += arrOption[ranIndex];
+    }
+   return passW;
   
   }
   
